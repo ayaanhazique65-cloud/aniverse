@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover anime, explore genres, and find official places to watch.">
+  <meta name="description" content="Discover anime, read original AniVerse summaries, and check official viewing options.">
   <title>AniVerse — Discover Your Next Anime</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -27,7 +27,7 @@
         <p class="hero-copy">Explore new worlds, unforgettable characters, and stories worth staying up for.</p>
         <a class="primary-button" href="#catalog">Explore the collection <span>→</span></a>
         <div class="hero-stats">
-          <div><strong id="title-count">06</strong><span>sample titles</span></div>
+          <div><strong id="title-count">06</strong><span>anime guides</span></div>
           <div class="stat-divider"></div>
           <div><strong>∞</strong><span>worlds to explore</span></div>
         </div>
@@ -62,6 +62,7 @@
         <button class="filter-chip" data-genre="Fantasy">Fantasy</button>
         <button class="filter-chip" data-genre="Drama">Drama</button>
         <button class="filter-chip" data-genre="Sci-Fi">Sci-Fi</button>
+        <button class="filter-chip" data-genre="Comedy">Comedy</button>
       </div>
 
       <div class="anime-grid" id="anime-grid" aria-live="polite"></div>
@@ -69,7 +70,12 @@
         <span>✦</span><h3>No titles found</h3><p>Try another title or genre.</p>
         <button class="secondary-button" id="reset-search">Reset filters</button>
       </div>
-      <p class="demo-note"><span>ⓘ</span> Demo catalog: titles and artwork are illustrative. Replace them with content and images you have permission to use.</p>
+      <p class="demo-note"><span>ⓘ</span> AniVerse is a fan-made discovery guide, not a streaming service. Availability varies by region; follow official links and check the service for details.</p>
+    </section>
+
+    <section class="detail-section hidden" id="detail-view" aria-live="polite">
+      <a class="back-link" href="#catalog">← Back to all anime</a>
+      <div id="detail-content"></div>
     </section>
 
     <section class="promo" id="about">
@@ -81,7 +87,7 @@
 
   <footer>
     <a class="brand footer-brand" href="#"><span class="brand-mark">✦</span> Ani<span>Verse</span></a>
-    <p>Fan discovery demo · Not affiliated with any anime studio.</p>
+    <p>Independent fan guide · Not affiliated with anime studios or streaming services.</p>
     <a href="#home">Back to top ↑</a>
   </footer>
   <script src="script.js"></script>
